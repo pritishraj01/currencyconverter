@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #99F7AB;
+}
+
+.container {
+    height: 70vh;
+    width: 40vw;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background-color: #D6F9DD;
+}
+
+@media(max-width:800px){
+    .container{
+        width: 70vw;
+    }
+}
+
+.heading p {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: overline;
+}
+
+@media(max-width:800px){
+    .heading p{
+        font-size: 1.3rem;
+    }
+}
+
+.amount p {
+    font-family: "Savate", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.amount input {
+    height: 2rem;
+    width: 98%;
+    font-size: 1.1rem;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 0.5rem;
+}
+
+.change-box {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+}
+
+@media(max-width:800px){
+    .change-box{
+        gap: 1.5rem;
+    }
+}
+
+.change-box select {
+    height: 3rem;
+    width: 5rem;
+    font-size: 1.5rem;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 0.5rem;
+}
+
+@media(max-width:800px){
+    .change-box select{
+        height: 2rem;
+        width: 4rem;
+
+    }
+}
+
+.msg {
+    background-color: #ABDF75;
+    height: 7rem;
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+.btn{
+    text-align: center;
+}
+
+.btn #convert-btn{
+    height: 2.3rem;
+    width: 7rem;
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+#convert-btn:hover{
+    transform: scale(1.2);
+}
