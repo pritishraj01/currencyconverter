@@ -16,18 +16,22 @@
         </div>
         <div class="amount">
             <p>Amount</p>
-            <input type="number" placeholder="Enter amount">
+            <input type="number" placeholder="Enter amount" id="Amount">
         </div>
         <div class="change-box">
             <div class="from">
-                <select>
-                    <option>usd</option>
+                <p class="box-heading">From</p>
+                <img id="from-flag" class="flag" src="https://flagsapi.com//shiny/64.png" alt="img">
+                <select id="dropdown-from">
+                    <option>Select</option>
                 </select>
             </div>
             <i class="fa-solid fa-right-left fa-flip fa-2xl"></i>
             <div class="to">
-                <select>
-                    <option>usd</option>
+                <p class="box-heading">To</p>
+                <img id="to-flag" class="flag" src="https://flagsapi.com//shiny/64.png" alt="img">
+                <select id="dropdown-to">
+                    <option>Select</option>
                 </select>
             </div>
         </div>
@@ -38,7 +42,11 @@
             <button id="convert-btn">Convert</button>
         </div>
     </div>
+    <script src="country.js"></script>
     <script src="app.js"></script>
+    <footer>
+        Made with <i class="fa-solid fa-heart" style="color: #ff0000;"></i> by Pritish
+    </footer>
 </body>
 
 </html>
