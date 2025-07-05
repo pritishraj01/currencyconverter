@@ -6,7 +6,7 @@ let btn= document.querySelector("#convert-btn");
 let msg=document.querySelector(".msg p");
 let fromFlag= document.querySelector("#from-flag");
 let toFlag= document.querySelector("#to-flag");
-
+try{
 fromDrop.addEventListener("change",()=>{
     fromFlag.src= `https://flagsapi.com/${countryList[fromDrop.value]}/shiny/64.png`;
     fromFlag.classList.remove("flag");
@@ -56,7 +56,7 @@ msg.innerText=`${amtVal} ${fromcurr}=${conversion} ${tocurr}`;
 fetchCurrencyData();
 
 });
-
-
-// adding flag //
+} catch(error){
+    msg.innerText= `Sorry, but value is not available right now`;
+}
 
